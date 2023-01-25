@@ -1,9 +1,10 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import type { Post } from './types';
 
 	export let data: PageData;
 
-	$: posts = data.posts;
+	$: posts = <Post[]>data.posts;
 </script>
 
 {#each posts as post}
