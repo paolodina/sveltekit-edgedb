@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { Post } from './types';
+	import type { Posts } from './types';
 	import BlogPost from './components/BlogPost.svelte';
 
 	export let data: PageData;
 
-	$: posts = <Post[]>data.posts;
+	$: posts = <Posts>data.posts;
 </script>
 
 <div class="posts">

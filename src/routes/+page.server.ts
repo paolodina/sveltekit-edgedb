@@ -1,14 +1,11 @@
 import type { PageServerLoad } from './$types';
 import { createClient } from 'edgedb';
+import { selectPosts } from './queries';
 
 const client = createClient();
 
 export const load = (async () => {
-	const posts = await client.query(`select BlogPost {
-		id,
-		title,
-		content
-	}`);
-
-	return { posts };
+	return {
+		posts: await selectPosts.run(client)
+	};
 }) satisfies PageServerLoad;
