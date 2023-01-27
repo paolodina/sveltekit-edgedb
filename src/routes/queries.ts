@@ -1,4 +1,4 @@
-import e from '../../dbschema/edgeql-js';
+import e from '$dbschema/edgeql-js';
 
 export const selectPosts = e.select(e.BlogPost, () => {
 	return {

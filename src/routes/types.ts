@@ -1,1 +1,1 @@
-export type { BlogPost as IBlogPost } from '../../dbschema/interfaces';
+export type { BlogPost as IBlogPost } from '$dbschema/interfaces';
