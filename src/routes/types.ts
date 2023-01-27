@@ -1,4 +1,1 @@
-import type { $infer } from '../../dbschema/edgeql-js';
-import type { selectPosts } from './queries';
-
-export type Posts = $infer<typeof selectPosts>;
+export type { BlogPost as IBlogPost } from '../../dbschema/interfaces';

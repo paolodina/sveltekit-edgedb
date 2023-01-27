@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { Post } from '../types';
+	import type { IBlogPost } from '../types';
 
-	export let post: Post | null = null;
+	export let post: IBlogPost | null = null;
 </script>
 
 {#if post}
