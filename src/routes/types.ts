@@ -1,5 +1,1 @@
-export type Post = {
-	id: string;
-	title: string;
-	content: string;
-};
+export type { BlogPost as IBlogPost } from '../../dbschema/interfaces';
