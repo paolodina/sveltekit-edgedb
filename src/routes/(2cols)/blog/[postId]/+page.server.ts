@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 import { createClient } from 'edgedb';
-import { selectPost } from '../queries';
+import { selectPost } from '$blog/queries';
 
 const client = createClient();
 

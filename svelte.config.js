@@ -10,7 +10,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'$dbschema': './dbschema'
+			'$dbschema': './dbschema',
+			'$blog': './src/routes/(2cols)/blog'
 		}
 	}
 };

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IBlogPost } from '../types';
+	import type { IBlogPost } from '$blog/types';
 
 	export let post: IBlogPost | null = null;
 </script>
