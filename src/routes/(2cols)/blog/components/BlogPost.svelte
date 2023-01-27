@@ -8,7 +8,7 @@
 	<header class="post-header">
 		<img width="48" height="48" alt="Author" class="post-avatar" src="https://i.pravatar.cc/48" />
 
-		<a href={`/${post.id}`}>
+		<a href={`/blog/${post.id}`}>
 			<h2 class="post-title">{post.title}</h2>
 		</a>
 		<p class="post-meta">

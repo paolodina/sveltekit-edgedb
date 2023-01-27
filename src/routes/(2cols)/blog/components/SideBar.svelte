@@ -1,6 +1,14 @@
 <div class="sidebar pure-u-1 pure-u-md-1-4">
+	<nav class="nav-top">
+		<ul class="nav-top nav-list">
+			<li class="nav-item">
+				<a class="pure-button" href="/">Home</a>
+			</li>
+		</ul>
+	</nav>
+
 	<div class="header">
-		<h1 class="brand-title">A Sample Blog</h1>
+		<h1 class="brand-title"><a href="/blog" title="Homepage">A Sample Blog</a></h1>
 		<h2 class="brand-tagline">Creating a blog</h2>
 
 		<nav class="nav">
@@ -20,6 +28,9 @@
 </div>
 
 <style>
+	a {
+		color: #fff;
+	}
 	.header {
 		text-align: center;
 		top: auto;
@@ -64,6 +75,13 @@
 	.nav-item a:focus {
 		border: 2px solid rgb(61, 146, 201);
 		text-decoration: none;
+	}
+	.nav-top {
+		display: flex;
+		justify-content: end;
+	}
+	.nav-top {
+		padding: 0 0.5rem;
 	}
 	@media (min-width: 48em) {
 		.header {
