@@ -1,11 +1,9 @@
 import type { PageServerLoad } from './$types'
-import { createClient } from 'edgedb'
+import { client as db } from '$lib/server/db/edgedb'
 import { selectPosts } from './queries'
-
-const client = createClient()
 
 export const load = (async () => {
   return {
-    posts: await selectPosts.run(client),
+    posts: await selectPosts.run(db),
   }
 }) satisfies PageServerLoad
