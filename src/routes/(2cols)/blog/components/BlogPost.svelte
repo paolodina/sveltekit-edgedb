@@ -1,12 +1,15 @@
 <script lang="ts">
   import type { IBlogPost } from '$blog/types'
+  import MdiPerson from '~icons/mdi/person'
 
   export let post: IBlogPost | null = null
 </script>
 
 {#if post}
   <header class="post-header">
-    <img width="48" height="48" alt="Author" class="post-avatar" src="https://i.pravatar.cc/48" />
+    <div class="post-avatar">
+      <MdiPerson color="#fff" width="48" height="48" />
+    </div>
 
     <a href={`/blog/${post.id}`}>
       <h2 class="post-title">{post.title}</h2>
@@ -40,6 +43,7 @@
     border-radius: 50px;
     float: right;
     margin-left: 1em;
+    background-color: #444;
   }
   .post-description {
     font-family: Georgia, 'Cambria', serif;
